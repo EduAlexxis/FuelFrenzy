@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<script>
+  function showWarning() {
+    var result = confirm("WARNING! This is my personal opinion. Please do not take this as facts or so.");
+    if (result == true) {
+      alert("Great, thanks for understanding!");
+      window.location.href = "Opinion.html";
+    } else {
+      window.location.href = "index.html";
+    }
+  }
+</script>
+<head>
+  <title>FuelFrenzy</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <style>
+    /* Set the size and position of the video background */
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Center the success message */
+    .message-container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      text-align: center;
+      margin: auto;
+      width: 50%;
+      border-radius: 10px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .message-container button {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="ElectricCars.html">Electric Cars</a></li>
+        <li><a href="GasCars.html">Gas Cars</a></li>
+        <li><a href="Comparision.html">Comparison</a></li>
+        <li><a class="Opinion" onclick="showWarning()" style="cursor: pointer;">Opinion</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Embed the background video -->
+  <video autoplay muted loop>
+    <source src="contact.mp4" type="video/mp4">
+  </video>
+
+  <!-- Display the success message -->
+  <div class="message-container">
+    <h2>Success!</h2>
+    <p>Your message has been sent. We will get back to you as soon as possible.</p>
+    <button onclick="location.href='index.html'">Take me home!</button>
+  </div>
+
+</body>
+
+</html>

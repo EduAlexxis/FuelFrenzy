@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<script>
+  function showWarning() {
+    var result = confirm("WARNING! This is my personal opinion. Please do not take this as facts or so.");
+    if (result == true) {
+      alert("Great, thanks for understanding!");
+      window.location.href = "Opinion.html";
+    } else {
+      window.location.href = "index.html";
+    }
+  }
+</script>
+<style>
+
+.newse {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+    border-radius: 20px;
+}
+
+.backgroundnewse {
+  background-color: #DCEFFB;
+}
+
+article {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  padding: 30px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-indent: 50px;
+}
+
+.article751 {
+  text-align: left;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.button751 {
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 630px;
+
+}
+
+
+</style>
+  <head>
+    <title>FuelFrenzy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="backgroundnewse">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="ElectricCars.html">Electric Cars</a></li>
+          <li><a href="GasCars.html">Gas Cars</a></li>
+          <li><a href="Comparison.html">Comparison</a></li>
+          <li><a class="Opinion" onclick="showWarning()" style="cursor: pointer;">Opinion</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article >
+        <h1>"Shifting to EVs is not enough. The deeper problem is our car dependence"</h1>
+        <img class="newse" src="s1.jpg" alt="Electric car">
+        <section class="article751">
+
+<p>In April, Prime Minister Justin Trudeau announced investments in electric vehicle (EV) infrastructure in Victoria as part of Canada’s plans to become a global leader in EVs. The federal government has been signing deals with auto companies and suppliers to expand the domestic EV industry, but is this the right focus to tackle climate change?</p>
+
+<p>EVs tend to produce fewer emissions over their life cycles compared to fossil-fuel-powered vehicles, but a greater share of an EV’s emissions comes from its production, particularly its battery. This has been a side of EVs that hasn’t received much attention. The International Energy Agency predicts that to transition to a green future that emphasizes EVs, mineral extraction will have to increase significantly. Lithium and cobalt demand is expected to soar by 4,200% and 2,100%, respectively.</p>
+
+<p>While this sounds good for the mining industry, using EVs to greenwash its operations, the human and environmental consequences throughout the supply chain are severe. The lithium triangle in South America pollutes the water and lowers the water table, which threatens fresh water access for local communities. Cobalt extraction in the Democratic Republic of the Congo causes high rates of birth defects and contaminated water. Around 40,000 children are believed to work in artisanal mines, and in 2019, electric carmaker Tesla was among several companies named in a lawsuit over child deaths at cobalt mines in the DRC.</p>
+
+<p>Part of the prime minister's plan for Canada to become a global EV leader is to increase mining. Lithium mines in Quebec have already caused environmental accidents and met with community opposition, while Indigenous opposition is mounting over plans to exploit the Ring of Fire in Ontario. Despite this, provinces across Canada are still looking for mineral deposits to exploit.</p>
+
+<p>Transportation accounted for 25% of national emissions in 2019, second only to oil and gas. This had grown by 54% since 1990, partially because of people buying big trucks and SUVs instead of sedans and driving more. However, the problem goes beyond tailpipe emissions. According to Statistics Canada, 73.7% of Canadians live in urban areas, but the majority are in the suburbs, not the downtown core. Those suburbs continue to grow, thanks to decades of government policy that incentivized suburban living and prioritized cars above other forms of mobility.</p>
+
+<p>A study found that 83% of Canadians own or lease a vehicle, and 81% of car owners felt it would be impossible not to because many communities have been built to deny residents a reliable alternative. Those suburban communities also have higher carbon footprints than denser urban areas. Car dependence is not only an environmental problem; it is also a health issue. In 2020, an estimated 1,745 people died in motor vehicle collisions, and another 7,868 people sustained serious injuries. Commute times are also getting longer in Canadian cities.</p>
+
+<p>Owning a car is more expensive than many people realize. Before the pandemic, inflation, and soaring fuel costs, the Canadian Automotive Association estimated the annual cost of vehicle ownership to be between $8,600 and $13,000, depending on the model. The cost is undoubtedly higher now. To truly tackle the challenge of climate change, we need to take on the dominance of cars in our communities. While the federal government has increased transit funding, much of the money won't flow until 2026 and beyond. Municipal bus systems need operations funding to provide a more frequent and reliable service, and many Canadian cities lack proper cycling infrastructure. The Liberals have finally approved Via Rail's high-frequency rail plan between Toronto and Quebec City after five years of delay, but it won't match the high-speed rail being built in other countries.</p>
+</section>
+        <img class="newse" src="s2.jpg" alt="Gas car">
+                        <p>‎  </p>
+           </div>
+          <a href="News.html" class="button751">Go Back</a>
+        </div>
+        <section class="article751">
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p class="Copyright">&copy; 2023 Eduardo Flamenco</p>
+    </footer>
+  </body>
+</html>
