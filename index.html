@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<script>
+  function showWarning() {
+    var result = confirm("WARNING! This is my personal opinion. Please do not take this as facts or so.");
+    if (result == true) {
+      alert("Great, thanks for understanding!");
+      window.location.href = "Opinion.html";
+    } else {
+      window.location.href = "index.html";
+    }
+  }
+</script>
+  <head>
+    <title>FuelFrenzy</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="ElectricCars.html">Electric Cars</a></li>
+          <li><a href="GasCars.html">Gas Cars</a></li>
+          <li><a href="Comparision.html">Comparison</a></li>
+      <li><a class="Opinion" onclick="showWarning()" style="cursor: pointer;">Opinion</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <video id="hero-video" autoplay muted loop>
+          <source src="background-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <div class="textoverlay">
+          <h1>FuelFrenzy</h1>
+          <p>As the world transitions towards more sustainable forms of transportation,</p> 
+          <p>the debate between gas cars and electric cars continues to be a hot topic.</p> </div>
+          <a href="About.html" class="latest-news-button">About Us</a>
+        </div>
+      </section>
+    </header>
+     <section class="latest-news">
+<h2 id="latest-news-heading">Latest News</h2>
+      <div class="news-grid">
+        <article class="articletop">
+          <img src="Gas.jpg" alt="News Image">
+          <h3>Electric vs. Gas Cars: Is It Cheaper to Drive an EV?</h3>
+          <p>Many people consider buying an electric vehicle for climate and air quality reasons, but is it cheaper to drive?</p>
+          <p>It's a complicated question that depends on factors like fuel costs, tax incentives, charging habits, and maintenance.</p>
+          <a href="News.html" class="LastNewsbutton">Read More</a>
+        </article>
+        <article class="articletop">
+          <img src="Electric.jpg" alt="News Image">
+          <h3>Will an Electric Car Save You Money?:</h3>
+          <p>Written by an expert from Consumer Reports' Auto Test Center, the article discusses industry trends, tax incentives, and cost savings, making it a valuable resource for potential EV buyers. </p>
+            <p>While the article presents a balanced view of the topic, it does not cover some crucial aspects like the range of different EV models.</p>
+          <a href="News.html" class="LastNewsbutton">Read More</a>
+        </article>
+        <article class="articlebottom">
+          <img src="Battery.jpg" alt="News Image">
+          <h3>Made-in-America Electric Cars: Good in Theory but a Complicated Mess in Practice.</h3>
+          <p>In this article, Kate Aronoff, a staff writer for the New Republic, argues that the Inflation Reduction
+Act's tax credit provisions could hinder the domestic production of electric cars. It could be intended
+for readers interested in energy policy and climate change. Aronoff's purpose is to warn readers
+about potential unintended consequences of the IRA's tax credit provisions. </p>
+         <a href="News.html" class="LastNewsbutton">Read More</a>
+        </article>
+        <article class="articlebottom">
+          <img src="Tesla.jpg" alt="News Image">
+          <h3>"Environmental
+Implications of Electric Cars."</h3>
+          <p>"Are electric cars really as environmentally friendly as we think? Find out the truth about the environmental impact of electric cars in this eye-opening article. </p>
+            <p>Delve into the potential consequences of the batteries used to power electric cars, and discover the surprising reality behind their production and recycling. With this article, you'll gain a better understanding of the challenges and opportunities facing the electric car industry. .</p>
+          <a href="News.html" class="LastNewsbutton">Read More</a>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <p class="Copyright">&copy; 2023 Eduardo Flamenco</p>
+    </footer>
+  </body>
+</html>
